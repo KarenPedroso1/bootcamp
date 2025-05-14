@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Meu CSS -->
+  <link rel="stylesheet" href="./Protótipo 1/css/CSS/styles.css" />
+
+  <title>Rick and Morty</title>
+</head>
+<body>
+
+  <header class="container-fluid mb-5">
+    <nav class="navbar bg-body-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img src="./Protótipo 1/assets/images/RICK_MORTY_ICON-01 (2).svg" alt="Ícone Rick and Morty" width="40" height="40" />
+        </a>
+      </div>
+    </nav>
+
+    <section class="container py-5">
+      <div class="row justify-content-center g-5">
+        <div class="col-12 text-center">
+          <h1 class="display-1 fw-bolder main-title">API do Rick and Morty</h1>
+        </div>
+
+        <div class="col-12 col-md-10 col-xl-8">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="search-input" placeholder="Pesquise um personagem" aria-label="Pesquise um personagem" aria-describedby="icon-search" />
+            <span class="input-group-text" id="icon-search" aria-label="Ícone de busca">
+              <i class="bi bi-search"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="container-fluid main-content">
+    <section class="container">
+      <div class="row" id="list-characters">
+        <!-- Lista de personagens será inserida aqui pelo JavaScript -->
+      </div>
+    </section>
+
+    <nav aria-label="Navegação de página" id="pagination" class="mt-4 text-center">
+      <!-- Paginação será construída via JavaScript -->
+    </nav>
+  </main>
+
+  <footer class="container-fluid pt-5 bg-dark">
+    <section class="container text-center w-75">
+      <div class="row text-uppercase fs-5 fw-bolder">
+        <div class="col-12 col-md-4">
+          <p>Personagens: <span id="total-characters"></span></p>
+        </div>
+        <div class="col-12 col-md-4">
+          <p>Localizações: <span id="total-locations"></span></p>
+        </div>
+        <div class="col-12 col-md-4">
+          <p>Episódios: <span id="total-episodes"></span></p>
+        </div>
+      </div>
+      <div class="row fw-bolder copy">
+        <div class="col-12">
+          <p>
+            <small>Desenvolvido por: <span class="text-light" id="deve-name">Karen Pedroso</span> em 
+              <span class="text-light" id="current-year">2025</span>.</small>
+          </p>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <!-- Axios JS -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <!-- Meus Scripts -->
+  <script src="./Protótipo 1/js/api.js"></script>
+  <script src="./Protótipo 1/js/common.js"></script>
+  <script src="./Protótipo 1/js/index.js"></script>
+</body>
+</html>
